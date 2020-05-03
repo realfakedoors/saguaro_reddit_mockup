@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="saguaro.css">
+  <link rel="stylesheet" href="custom.css">
+  <title>reddit: the front page of the internet</title>
+</head>
+<body>
+  <div class="page-wrapper">
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+      <img class="reddit-logo" src="static/reddit-logo.png">
+      <div class="field searchbar">
+        <input class="text-input" type="text" placeholder="Search">
+        <img class="magnifying-glass" src="static/magnifying-glass.png">
+      </div>
+      <div class="buttons nav-buttons">
+        <button class="button white-button">
+          Log In
+        </button>
+        <button class="button blue-button">
+          Sign Up
+        </button>
+        <button class="button nav-dropdown">
+          <img class="icon" src="static/nav-dropdown-icon.png">
+        </button>
+      </div>
+    </nav>
+    
+    <!-- Trending Today -->
+    <div class="container trending-container">
+      <div class="section-heading">Trending today</div>
+      <div class="row">
+        <div class="trending-topic" id="rishi">
+          <div class="shaded-gradient"></div>
+          <div class="text-container">
+            <h4 class="subject">Rishi Kapoor</h4>
+            <p class="headline">Leaf art as a tribute to Legends: Rishi Kapoor and Irfan Khan</p>
+            <div class="trending-source">
+              <span class="tiny_snoo"></span>
+              <p class="subreddits">r/india and more</p>
+            </div>
+          </div>
+        </div>
+        <div class="trending-topic" id="flynn">
+          <div class="shaded-gradient"></div>
+          <div class="text-container">
+            <h4 class="subject">Flynn</h4>
+            <p class="headline">The 'Bombshell' That Wasn't? Lawyers Say the FBI's Tactics in...</p>
+            <div class="trending-source">
+              <span class="tiny_snoo"></span>
+              <p class="subreddits">r/politics and more</p>
+            </div>
+          </div>
+        </div>
+        <div class="trending-topic" id="parks">
+          <div class="shaded-gradient"></div>
+          <div class="text-container">
+            <h4 class="subject">Parks and Rec</h4>
+            <p class="headline">In honor of Parks and Rec returning, Leslie Knope in her...</p>
+            <div class="trending-source">
+              <span class="tiny_snoo"></span>
+              <p class="subreddits">r/AnimalCrossing and more</p>
+            </div>
+          </div>
+        </div>
+        <div class="trending-topic" id="valhalla">
+          <div class="shaded-gradient"></div>
+          <div class="text-container">
+            <h4 class="subject">Assassins Creed Valhalla</h4>
+            <p class="headline">Assassin's Creed Valhalla: Cinematic World Premiere...</p>
+            <div class="trending-source">
+              <span class="tiny_snoo"></span>
+              <p class="subreddits">r/assassinscreed and more</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="main-content-wrapper">
+      <div class="section-heading" id="top-posts">Top Posts</div>
+      <!-- Main Content Column -->
+      <div class="main-column">
+        <div class="switch-feeds">
+          <div class="buttons">
+            <button class="button" id="hot"><img src="static/hot-logo.png">Hot</button>
+            <button class="button"><img src="static/new-logo.png">New</button>
+            <button class="button"><img src="static/top-logo.png">Top</button>
+            <button class="button"><img src="static/other-modes.png"></button>
+            <button class="button" id="switch"><img src="static/switch-views.png"></button>
+          </div>
+        </div>
+        
+        <!-- Sample Main Content -->
+        <div class="post" id="first-post">
+          <span class="score-sidebar">
+            <img src="static/upvote-arrow.png">
+            23.7k
+            <img src="static/downvote-arrow.png">
+          </span>
+          <span class="content">
+            <nav class="subreddit-info">
+              <span class="tiny_snoo"></span>
+              <span class="subreddit-name">r/dogs</span>
+              <span class="posted-by">
+                • Posted by u/CatWithAKeyboard 22 hours ago
+              </span>
+              <button class="button blue-button">+Join</button>
+            </nav>
+            <div class="title">
+              Dogs have been banned.
+            </div>
+            <nav class="calls-to-action">
+              <span class="comments"><img src="static/comments.png">12.3k Woofs</span>
+              <span class="share"><img src="static/share.png">Share</span>
+              <span class="save"><img src="static/save.png">Save</span>
+              <span class="modes"><img src="static/other-modes.png"></span>
+            </nav>
+          </span>
+        </div>
+        
+        <div class="post">
+          <span class="score-sidebar">
+            <img src="static/upvote-arrow.png">
+            11.9k
+            <img src="static/downvote-arrow.png">
+          </span>
+          <span class="content">
+            <nav class="subreddit-info">
+              <span class="tiny_snoo"></span>
+              <span class="subreddit-name">r/cats</span>
+              <span class="posted-by">
+                • Posted by u/DoggoMcWoofer 2 hours ago
+              </span>
+              <button class="button blue-button">+Join</button>
+            </nav>
+            <div class="title">
+              Cats have been cancelled.
+            </div>
+            <nav class="calls-to-action">
+              <span class="comments"><img src="static/comments.png">8.1k Outraged Meows</span>
+              <span class="share"><img src="static/share.png">Share</span>
+              <span class="save"><img src="static/save.png">Save</span>
+              <span class="modes"><img src="static/other-modes.png"></span>
+            </nav>
+          </span>
+        </div>
+        
+        <div class="post">
+          <span class="score-sidebar">
+            <img src="static/upvote-arrow.png">
+            42.9k
+            <img src="static/downvote-arrow.png">
+          </span>
+          <span class="content">
+            <nav class="subreddit-info">
+              <span class="tiny_snoo"></span>
+              <span class="subreddit-name">r/cats</span>
+              <span class="posted-by">
+                • Posted by u/ConcernedBichon 12 hours ago
+              </span>
+              <button class="button blue-button">+Join</button>
+            </nav>
+            <div class="title">
+              Can we talk about the new mailman?
+            </div>
+            <div class="photo">
+              <img src="static/mailman.jpg">
+            </div>
+            <nav class="calls-to-action">
+              <span class="comments"><img src="static/comments.png">66.1k Enthused Barks</span>
+              <span class="share"><img src="static/share.png">Share</span>
+              <span class="save"><img src="static/save.png">Save</span>
+              <span class="modes"><img src="static/other-modes.png"></span>
+            </nav>
+          </span>
+        </div>
+        
+        <div class="post">
+          <span class="score-sidebar">
+            <img src="static/upvote-arrow.png">
+            21.4k
+            <img src="static/downvote-arrow.png">
+          </span>
+          <span class="content">
+            <nav class="subreddit-info">
+              <span class="tiny_snoo"></span>
+              <span class="subreddit-name">r/cats</span>
+              <span class="posted-by">
+                • Posted by u/CatnipLover hours ago
+              </span>
+              <button class="button blue-button">+Join</button>
+            </nav>
+            <div class="title">
+              I can't get in a room upstairs, the door is closed. This is unacceptable.
+            </div>
+            <div class="photo">
+              <img src="static/door.jpg">
+            </div>
+            <nav class="calls-to-action">
+              <span class="comments"><img src="static/comments.png">4.1k Outraged Meows</span>
+              <span class="share"><img src="static/share.png">Share</span>
+              <span class="save"><img src="static/save.png">Save</span>
+              <span class="modes"><img src="static/other-modes.png"></span>
+            </nav>
+          </span>
+        </div>
+      </div>
+      
+      <!-- Side Content Column -->
+      <div class="side-column">
+        <!-- Discover Communities -->
+        <div class="communities">
+          <div id="title-box">
+            <div class="shaded-gradient"></div>
+            <div id="title-text">
+              Communities Around the World
+            </div>
+          </div>
+          <div class="list-wrapper">
+            <div class="community">
+              <span class="listing-number">1</span>
+              <span class="subreddit-icon"></span>
+              <span class="community-name">r/Wolves</span>
+            </div>
+            <div class="community">
+              <span class="listing-number">2</span>
+              <span class="subreddit-icon"></span>
+              <span class="community-name">r/Panthers</span>
+            </div>
+            <div class="community">
+              <span class="listing-number">3</span>
+              <span class="subreddit-icon"></span>
+              <span class="community-name">r/Dingoes</span>
+            </div>
+            <div class="community">
+              <span class="listing-number">4</span>
+              <span class="subreddit-icon"></span>
+              <span class="community-name">r/FoodBowlPorn</span>
+            </div>
+            <div class="community" id="bottom">
+              <span class="listing-number">5</span>
+              <span class="subreddit-icon"></span>
+              <span class="community-name">r/CozyPlaces</span>
+            </div>
+          </div>
+          <div class="view-all-button">
+            <button class="button blue-button">View All</button>
+          </div>
+          <div class="buttons alternate-communities">
+            <button class="button">Tennis Balls</button>
+            <button class="button">Scratches</button>
+            <button class="button">Furniture</button>
+            <button class="button">Grass</button>
+          </div>
+        </div>
+        
+        <!-- Reddit Premium -->
+        <div class="reddit-premium">
+          <img id="premium-logo" src="static/reddit-premium.png">
+          <span class="premium-text">
+            <h5>Reddit Premium</h5>
+            <h6>The best Reddit experience, with monthly Coins</h6>
+          </span>
+          <button class="button try-premium">Try Now</button>
+        </div>
+        
+        <!-- Trending Communities -->
+        <div class="trending-communities">
+          <div class="section-heading" id="trending-heading">Trending Communities</div>
+          <div class="trending-community">
+            <span class="large-subreddit-snoo"></span>
+            <span class="community-info">
+              <div class="name">r/PuppiesAreCute</div>
+              <div class="members">45,011 members</div>
+            </span>
+            <button class="join-button">Join</button>
+          </div>
+          <div class="trending-community">
+            <span class="large-subreddit-snoo"></span>
+            <span class="community-info">
+              <div class="name">r/KittensAreCuter</div>
+              <div class="members">77,214 members</div>
+            </span>
+            <button class="join-button">Join</button>
+          </div>
+          <div class="trending-community">
+            <span class="large-subreddit-snoo"></span>
+            <span class="community-info">
+              <div class="name">r/BabyIguanas</div>
+              <div class="members">113,811 members</div>
+            </span>
+            <button class="join-button">Join</button>
+          </div>
+          <div class="trending-community">
+            <span class="large-subreddit-snoo"></span>
+            <span class="community-info">
+              <div class="name">r/ReptilesRule</div>
+              <div class="members">5,345,011 members</div>
+            </span>
+            <button class="join-button">Join</button>
+          </div>
+          <div class="trending-community">
+            <span class="large-subreddit-snoo"></span>
+            <span class="community-info">
+              <div class="name">r/BabySnakes</div>
+              <div class="members">9,945,011 members</div>
+            </span>
+            <button class="join-button">Join</button>
+          </div>
+        </div>
+        
+        <!-- Popular Communities -->
+        <div class="popular-communities">
+          <div class="category" id="popular">Popular Communities</div>
+          <div class="random-communities">
+            <p>AskPets</p>
+            <p>FishAreNeat</p>
+            <p>PurinaVsIams</p>
+            <p>FancyFeast</p>
+            <p>PassingCars</p>
+            <p>FloorSpotsWithSun</p>
+            <p>Walks</p>
+            <h5 id="see-more">See More</h6>
+          </div>
+          <div class="category">Gaming</div>
+          <div class="category">Sports</div>
+          <div class="category">TV</div>
+          <div class="category">Travel</div>
+          <div class="category">Health & Fitness</div>
+          <div class="category">Fashion</div>
+        </div>
+        
+        <!-- Company Footer Box -->
+        <div class="company-footer">
+          <div class="company-links">
+            <div class="links-column">
+              <a class="link" href="#">Help</a>
+              <a class="link" href="#">Reddit App</a>
+              <a class="link" href="#">Reddit Coins</a>
+              <a class="link" href="#">Reddit Premium</a>
+              <a class="link" href="#">Reddit Gifts</a>
+              <a class="link" href="#">Communities</a>
+              <a class="link" href="#">Top Posts</a>
+              <a class="link" href="#">Topics</a>
+            </div>
+            <div class="links-column">
+              <a class="link" href="#">About</a>
+              <a class="link" href="#">Careers</a>
+              <a class="link" href="#">Press</a>
+              <a class="link" href="#">Advertise</a>
+              <a class="link" href="#">Blog</a>
+              <a class="link" href="#">Terms</a>
+              <a class="link" href="#">Content Policy</a>
+              <a class="link" href="#">Privacy Policy</a>
+              <a class="link" href="#">Mod Policy</a>
+            </div>
+          </div>
+          Reddit Inc © 2020. All rights reserved
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

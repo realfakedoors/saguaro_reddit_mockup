@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+.page-wrapper {
+  width: 100%;
+  height: 100vh;
+  
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  
+  background-color: #dae0e6;
+  overflow-y: scroll;
+}
+
+// Navbar
+
+.navbar {
+  height: 48px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  background-color: white;
+  overflow: none;
+  
+  .searchbar {
+    position: relative;
+    
+    width: 50%;
+    
+    margin-top: 0;
+    
+    .text-input {
+      height: 38px;
+      
+      padding-left: 38px;
+      border: none;
+      
+      background-color: #f6f7f8;      
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+  
+  .button {
+    width: 120px;
+    
+    font-size: 11px;
+    
+    text-transform: uppercase;
+  }
+  
+  .nav-dropdown {
+    width: 60px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: none;
+    background-color: white;
+  }
+}
+
+.white-button {
+  background-color: white;
+  color: #0079d3;
+  
+  border: 1px solid #0079d3;
+}
+
+.blue-button {
+  background-color: #0079d3;
+  color: white;
+  
+  border: none;
+}
+
+.magnifying-glass {
+  position: absolute;
+  left: 15px;
+  top: 8px;
+  
+  height: 18px;
+  width: 18px;
+  margin: auto 0;
+  
+  opacity: 45%;
+}
+
+// Trending today
+
+.section-heading {
+  margin: 15px 5px;
+  
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.trending-container { margin: 0 auto; }
+
+.trending-topic {
+  position: relative;
+  
+  width: 25%;
+  height: 180px;
+  
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  
+  .text-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    margin: 10px;
+    
+    line-height: 20px;
+    
+    .subject {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    
+    .headline {
+      font-size: 14px;
+    }
+    
+    .trending-source {
+      display: flex;
+      align-items: flex-end;
+      
+      margin: 8px 0 4px;
+      
+      .subreddits {
+        display: inline;
+        
+        margin-left: 8px;
+        
+        font: 11px sans-serif;
+      }
+    }
+  }
+}
+
+.shaded-gradient {
+  height: 100%;
+  width: 100%;
+  
+  background-image: linear-gradient(#777, #000);
+  border-radius: 8px;
+  
+  opacity: 40%;
+}
+
+.tiny_snoo {
+  display: inline-block;
+  
+  height: 15px;
+  width: 15px;
+  
+  border-radius: 50%;
+  
+  background-color: white;
+}
+
+#rishi    { background-image: url(static/leaves.jpg);   }
+#flynn    { background-image: url(static/flynn.jpg);    }
+#parks    { background-image: url(static/parks.jpg);    }
+#valhalla { background-image: url(static/valhalla.jpg); }
+
+// Main Content & Posts
+
+.main-content-wrapper {
+  position: relative;
+  
+  width: 940px;
+  height: 800px;
+  
+  margin: 30px auto;
+  
+  display: flex;
+  justify-content: space-between;
+  
+  #top-posts {
+    position: absolute;
+    left: 0;
+    top: -30px;
+  }
+  
+  .main-column,
+  .side-column {
+    margin-top: 15px; 
+    height: 100%;
+    
+    > * {
+      width: 100%;
+      
+      border: 1px solid lightgrey;
+      border-radius: 4px;
+      background-color: white;
+    }
+  }
+  
+  .main-column {    
+    flex: 2;
+    margin-right: 15px;
+  }
+  
+  .side-column {    
+    flex: 1;
+    margin-left: 15px;
+    
+    > * { margin-bottom: 20px; }
+  }
+}
+
+.switch-feeds {
+  height: 50px;
+}
+
+.switch-feeds > .buttons {
+  
+ .button {
+    width: 70px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    color: #777;
+    border: none;
+    padding: 0px;
+  }
+  
+  img {
+    height: 20px;
+    width: 20px;
+    
+    margin-right: 5px;
+    border: none;
+  }
+  
+  #hot {
+    color: #0079d3;
+    background-color: #f6f7f8;
+    
+    border-radius: 20px;
+  }
+  
+  #switch {
+    margin-left: auto;
+    
+    img {
+      margin-left: auto;
+      
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+#first-post { margin-top: 22px; }
+
+.post {
+  margin-top: 10px;
+  
+  display: flex;
+  
+  .score-sidebar {    
+    width: 42px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #f6f7f8;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    
+    img {
+      height: 20px;
+      width: 20px;
+      
+      border: none;
+      margin: 5px auto;
+    }
+  }
+  
+  .content {
+    width: 100%;
+    border: none;
+    
+    * { border: none; }
+    
+    .subreddit-info,
+    .calls-to-action {
+      width: 100%;
+      height: 40px;
+      
+      padding: 10px;
+      
+      display: flex;
+      align-items: center;
+            
+      .tiny_snoo {
+        width: 18px;
+        height: 18px;
+        
+        border: none;
+        border-radius: 50%;
+        background-color: darkgreen;
+      }
+      
+      .subreddit-name,
+      .posted-by {
+        font-size: 12px;
+        font-weight: 700;
+      }
+      
+      .subreddit-name {
+        width: auto;
+        
+        margin: 0 4px;
+      }
+      
+      .posted-by {
+        flex: 6;
+        
+        color: #777;
+        
+        font-size: 10px;
+        font-weight: 400;
+      }
+      
+      .button {        
+        width: 55px;
+        height: 23px;
+        
+        margin-left: auto;
+        padding: 0 5px;
+        
+        background-color: #0079d3;
+        font-size: 12px;
+        font-weight: 700;
+        
+        text-transform: uppercase;
+      }
+    }
+    
+    .title {
+      width: 80%;
+      
+      margin: 5px 0 5px 10px;
+      
+      font-size: 18px;
+      line-height: 22px;
+    }
+    
+    .photo {
+      width: 100%;
+      padding-right: 20px;
+      margin-top: 15px;
+      
+      img { max-width: 100%; }
+    }
+    
+    .calls-to-action {
+      height: 22px;
+      
+      margin: 15px 0 6px;
+      padding: 0 0 0 10px;
+      justify-content: flex-start;
+      
+      color: #777;      
+      font-size: 12px;
+      font-weight: 700;
+      
+      span {
+        width: auto;
+        margin-right: 8px;
+        
+        display: flex;
+        align-items: center;
+        
+        img {
+          height: 16px;
+          width: 16px;
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+}
+
+// Communities
+
+.communities {
+  
+  * { border: none; }
+  
+  #title-box {
+    position: relative;
+    
+    height: 80px;
+    
+    background-image: url(static/communities-background.png);
+    background-position: center center;
+    
+    color: white;
+    font-weight: 500;
+    
+    #title-text {
+      position: absolute;
+      left: 10px;
+      bottom: 8px;
+      
+      background: none;
+      border: none;
+    }
+  }
+  
+  .list-wrapper {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    
+    .community {
+      height: 48px;
+      
+      display: flex;
+      align-items: center;
+      
+      border: none;
+      border-top: 1px solid #eee;
+      
+      font-size: 14px;
+      font-weight: 500;
+      
+      * { 
+        border: none; 
+        width: auto;
+      }
+      
+      .subreddit-icon {
+        width: 30px;
+        height: 30px;
+        
+        border-radius: 50%;
+        
+        background-color: lightblue;
+      }
+      
+      .listing-number { margin: 0 20px; }
+      .community-name { margin-left: 8px; }
+    }
+  }
+  
+  .view-all-button {
+    border: none;
+    
+    button {
+      margin: 6px 5%;
+      border: none;
+      width: 90%;
+      
+      font-size: 12px;
+      text-transform: uppercase;
+      background-color: #0079d3;
+      color: white;
+    }
+  }
+  
+  .alternate-communities {
+    border: none;
+    
+    button {
+      border: none;
+      
+      margin: 5px;
+      
+      color: #0079d3;
+      background-color: #f1f2f4;
+      
+      font-size: 12px;
+    }
+  }
+}
+
+// Reddit Premium
+
+.reddit-premium {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  #premium-logo,
+  .try-premium,
+  .premium-text,
+  .premium-text > * { border: none; }
+  
+  #premium-logo {
+    height: 30px;
+    width: 30px;
+    
+    margin: 0 10px;
+  }
+  
+  .premium-text {
+    margin: 8px 0;
+    
+    font-size: 12px;
+    line-height: 18px;
+    
+    h5 { font-weight: 700; }
+  }
+  
+  .try-premium {
+    width: 114px;
+    height: 30px;
+    
+    margin-right: 10px;
+    
+    background-color: #ff4500;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
+// Trending Communities
+
+.trending-communities {
+  display: flex;
+  flex-direction: column;
+  
+  padding-bottom: 10px;
+  
+  .trending-community {
+    border: none;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    
+    > * { border: none;}
+    
+    .large-subreddit-snoo {
+      height: 30px;
+      width: 30px;
+      
+      margin-left: 10px;
+      
+      border-radius: 50%;
+      background-color: orange;
+    }
+    
+    .community-info {
+      > * { border: none; }
+      
+      width: 40%;
+      
+      font-size: 12px;
+      text-align: left;
+      line-height: 16px;
+      
+      margin: 0 6px;
+      
+      .name { font-weight: 500; }
+    }
+    
+    .join-button {
+      height: 30px;
+      width: 100px;
+      margin: 4px 7px 4px auto;
+      
+      background-color: #0079d3;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 12px;
+    }
+  }
+}
+
+#trending-heading {
+  border: none;
+  margin-left: 10px;
+  
+  width: 80%;
+}
+
+// Popular Communities
+
+.popular-communities {
+  display: flex;
+  flex-direction: column;
+  
+  .category,
+  .random-communities > p,
+  .random-communities,
+  #see-more { border: none; }
+  
+  .category {
+    padding: 14px;
+    width: 100%;
+    border-top: 1px solid #d4d9dd;
+    
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .random-communities {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    font-size: 13px;
+    font-weight: 500;
+    
+    p {
+      padding: 4px;
+      margin: 4px 7px;
+      width: auto;
+    }
+    
+    #see-more {
+      margin: 10px 12px 20px;
+      
+      text-transform: uppercase;
+      font-weight: 700;      
+      color: #0080ff;
+    }
+  }
+  
+  #popular {
+    border: none;
+  }
+}
+
+// Company Footer Box
+
+.company-footer {
+  padding: 10px;
+  font-size: 12px;
+}
+
+.company-links {
+  display: flex;
+  flex-wrap: wrap;
+  
+  .links-column {
+    width: 45%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 10px;
+    
+    .link {
+      text-decoration: none;
+      color: black;
+      font-size: 12px;
+      
+      margin-bottom: 10px;
+    }
+  }
+}
